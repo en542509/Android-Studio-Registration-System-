@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yiweizhang.csci3130project.AddDropActivity">
+    <TextView
+        android:id="@+id/theList"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="The Registered Course List" />
+
+
+    <ListView
+        android:id="@+id/chooseCourselist"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/theList"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/currentCourse"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/chooseCourselist"
+        android:layout_height="50dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="141dp"
+        android:text="TextView" />
+
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/currentCourse">
+
+
+        <Button
+            android:id="@+id/AddClassbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/textView"
+
+            android:text="@string/AddClassButton" />
+
+        <Button
+            android:id="@+id/DropClassBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/DropClassButton" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

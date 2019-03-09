@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.yiweizhang.csci3130project.MajorAndTermActivity">
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="Choose your major:" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_cs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onRadioMajorClicked"
+            android:text="CS"
+            android:layout_marginRight="14dp"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/radio_chemistry"
+            android:text="Chemistry"
+            android:textStyle="bold"
+            android:onClick="onRadioMajorClicked"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="14dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radio_economy"
+            android:text="Economics"
+            android:textStyle="bold"
+            android:onClick="onRadioMajorClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Choose your term: "
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_winter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginRight="14dp"
+            android:onClick="onRadioTermClicked"
+            android:text="Winter term"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/radio_summer"
+            android:text="Summer term"
+            android:textStyle="bold"
+            android:layout_marginRight="14dp"
+            android:onClick="onRadioTermClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radio_fall"
+            android:text="Fall term"
+            android:layout_marginRight="14dp"
+            android:textStyle="bold"
+            android:onClick="onRadioTermClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_marginLeft="10dp"
+        android:onClick="searchCourseBtn"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="70dp"
+        android:text="Search Courses" />
+
+
+</LinearLayout>

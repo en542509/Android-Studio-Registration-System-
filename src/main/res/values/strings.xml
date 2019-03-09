@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CSCI3130PROJECT</string>
+    <string name="title_activity_login_page">LoginPage</string>
+    <string name="DropClassButton">Drop course</string>
+    <string name="AddClassButton">Add course:</string>
+
+    <string-array name="Course">
+        <item> Database Design</item>
+        <item> Ensemble</item>
+        <item> Ensemble 1</item>
+        <item> Voice</item>
+        <item> Guitar</item>
+        <item> Piano</item>
+        <item> violin</item>
+        <item> French</item>
+        <item> Spanish</item>
+        <item> Chinese</item>
+        <item> Japanese</item>
+        <item> German Fiction</item>
+        <item> Halifax and the world</item>
+        <item> Introduction to Java</item>
+        <item> Introduction to C</item>
+        <item> Introduction to python</item>
+        <item> Introduction to C++</item>
+        <item> Introduction to UI</item>
+        <item> Math 2112</item>
+        <item> Math 2001</item>
+
+    </string-array>
+</resources>
+

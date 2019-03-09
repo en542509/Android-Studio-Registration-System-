@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CSCI"
+    >
+    <Button
+        android:id="@+id/cs1000"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="CSCI1100" />
+
+    <Button
+        android:id="@+id/cs2000"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="CSCI3120" />
+
+    <Button
+        android:id="@+id/cs3000"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="CSCI3171" />
+
+
+    <Button
+        android:id="@+id/cs4000"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="cs4000" />
+
+    <Button
+        android:id="@+id/cs5000"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="CSCI4145" />
+
+    <Button
+        android:id="@+id/cs6000"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="CSCI451279" />
+</LinearLayout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yiweizhang.csci3130project.WeeklyScheduleActivity">
+
+   <TextView
+       android:layout_marginTop="20dp"
+       android:textSize="30sp"
+       android:layout_marginBottom="15dp"
+       android:layout_width="match_parent"
+       android:text="Weekly Schedule"
+       android:gravity="center_horizontal"
+       android:layout_height="wrap_content" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="wrap_content"
+          android:layout_marginTop="80dp"
+          android:layout_height="wrap_content">
+
+         <TextView
+             android:text="8:00"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             android:text="10:00"
+             android:layout_marginTop="50dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             android:text="12:00"
+             android:layout_marginTop="50dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:text="14:00"
+             android:layout_marginTop="50dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:text="16:00"
+             android:layout_marginTop="70dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:text="18:00"
+             android:layout_marginTop="70dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+
+
+      </LinearLayout>
+
+      <HorizontalScrollView
+          android:layout_width="wrap_content"
+          android:layout_height="550dp"
+          android:scrollbars="none">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:divider="@drawable/row_divider"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:showDividers="beginning|middle|end"
+                android:weightSum="6">
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_weight="1"
+                   android:divider="@drawable/column_divider"
+                   android:showDividers="middle">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="Monday" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="Tuesday" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="Wednesday" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="Thursday" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="Friday" />
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center_horizontal"
+
+                   android:layout_weight="1"
+                   android:divider="@drawable/column_divider"
+                   android:showDividers="middle">
+
+                  <TextView
+                      android:id="@+id/monday_0"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/tuesday_0"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/wen_0"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/thursday_0"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/friday_0"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_weight="1"
+                   android:divider="@drawable/column_divider"
+                   android:showDividers="middle">
+
+                  <TextView
+                      android:id="@+id/monday_1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/tuesday_1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/wen_1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/thursday_1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/friday_1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_weight="1"
+                   android:divider="@drawable/column_divider"
+                   android:showDividers="middle">
+
+                  <TextView
+                      android:id="@+id/monday_2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/tuesday_2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/wen_2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/thursday_2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/friday_2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_weight="1"
+                   android:divider="@drawable/column_divider"
+                   android:showDividers="middle">
+
+
+                  <TextView
+                      android:id="@+id/monday_3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/tuesday_3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/wen_3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/thursday_3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/friday_3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_weight="1"
+                   android:divider="@drawable/column_divider"
+                   android:showDividers="middle">
+
+                  <TextView
+                      android:id="@+id/monday_4"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/tuesday_4"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/wen_4"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/thursday_4"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+
+                  <TextView
+                      android:id="@+id/friday_4"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="empty" />
+               </TableRow>
+            </TableLayout>
+
+
+
+         </LinearLayout>
+
+
+
+      </HorizontalScrollView>
+
+
+
+   </LinearLayout>
+
+
+
+
+</LinearLayout>
